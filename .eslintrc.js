@@ -3,30 +3,30 @@ module.exports = {
     browser: true,
     es2021: true,
   },
-  extends: ["plugin:react/recommended", "airbnb", "prettier", "prettier/react"],
-  parser: "babel-eslint",
+  extends: ['plugin:react/recommended', 'airbnb', 'prettier'],
+  parser: 'babel-eslint',
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
     },
     ecmaVersion: 12,
-    sourceType: "module",
+    sourceType: 'module',
   },
-  plugins: ["react", "prettier"],
+  plugins: ['react', 'prettier'],
   rules: {
-    "prettier/prettier": "error",
-    "react/jsx-filename-extension": [
-      "warn",
+    'prettier/prettier': 'error',
+    'react/jsx-filename-extension': [
+      'warn',
       {
-        extensions: [".jsx", ".js"]
-      }
+        extensions: ['.jsx', '.js'],
+      },
     ],
-    "import/prefer-default-export": "off",
-    "no-param-reassign": "off",
-    "no-console": [
-      "error",
+    'import/prefer-default-export': 'off',
+    'no-param-reassign': 'off',
+    'no-console': [
+      'error',
       {
-        allow: ["tron"],
+        allow: ['tron'],
       },
     ],
   },

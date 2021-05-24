@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 const Header = styled.header`
   display: flex;
@@ -8,7 +8,7 @@ const Header = styled.header`
   height: 80px;
   background: black;
   color: white;
-  
+
   font-size: 16px;
   font-family: Circular, sans-serif;
   font-weight: bold;

@@ -1,3 +1,4 @@
+import React from 'react';
 import {
   DivDashboard,
   DivContainerDashboard,
@@ -15,9 +16,7 @@ function Dashboard() {
           Milhões de músicas e podcasts para explorar. E nem precisa de cartão
           de crédito.
         </PDashboard>
-        <ButtonDashboard>
-          BAIXE O SPOTIFY FREE
-        </ButtonDashboard>
+        <ButtonDashboard>BAIXE O SPOTIFY FREE</ButtonDashboard>
       </DivContainerDashboard>
     </DivDashboard>
   );
