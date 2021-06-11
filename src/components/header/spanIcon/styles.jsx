@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const DivSpanIcon = styled.div`
   align-items: center;
@@ -13,7 +13,6 @@ export const ASpanIcon = styled.a`
 `;
 
 export const Span = styled.span`
-
   align-items: center;
   justify-content: center;
 `;

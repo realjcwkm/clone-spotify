@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const DivDashboard = styled.div`
   background-color: rgb(41, 65, 171);
@@ -8,12 +8,12 @@ export const DivDashboard = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 980px;
+  min-height: 854px;
 
-
-  @media (min-width: 1200px, min-width: 1920px){
+  @media (min-width: 1920px) {
     background-size: 170%;
     background-position: 44% 7%;
+    height: 980px;
   }
 `;
 
@@ -22,11 +22,11 @@ export const DivContainerDashboard = styled.div`
 `;
 
 export const H1Dashboard = styled.h1`
-position: relative;
-font-size: 156px;
-color: #1ed760;
-left: -125px;
-letter-spacing: -8px;
+  position: relative;
+  font-size: 156px;
+  color: #1ed760;
+  left: -125px;
+  letter-spacing: -8px;
 `;
 
 export const PDashboard = styled.p`
@@ -37,7 +37,7 @@ export const PDashboard = styled.p`
 
 export const ButtonDashboard = styled.a`
   background-color: #1ed760;
-  color: #2941AB;
+  color: #2941ab;
   font-size: 14px;
   padding: 15px 25px;
   border-radius: 25px;

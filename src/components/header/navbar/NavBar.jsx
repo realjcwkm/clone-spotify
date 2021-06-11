@@ -1,3 +1,4 @@
+import React from 'react';
 import { Nav, Ul, Li } from './styles';
 
 export default function NavBar() {
@@ -13,4 +14,4 @@ export default function NavBar() {
       </Ul>
     </Nav>
   );
-};
+}
