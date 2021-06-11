@@ -4,9 +4,17 @@ import DlItems from './dlItems/DlItems';
 import FollowUsItems from './followUsItems/FollowUsItems';
 import {
   DivContainerFooter,
+  DivCenterFooter,
   ContainerFooter,
   DivFooterDlItems,
   DivSpotifyIcon,
+  ContainerInfo,
+  ContainerInfoFirst,
+  ARegion,
+  ImgIconRegion,
+  ContainerInfoLast,
+  AInfo,
+  SpanYear,
 } from './styles';
 
 function Footer() {
@@ -44,22 +52,52 @@ function Footer() {
 
   return (
     <DivContainerFooter>
-      <ContainerFooter>
-        <DivSpotifyIcon>
-          <ASpanIcon href="https://www.spotify.com/br/">
-            <Span>
-              <ImgIcon src="../../../../whiteicon.svg" alt="logo" />
-              Spotify
-            </Span>
-          </ASpanIcon>
-        </DivSpotifyIcon>
-        <DivFooterDlItems>
-          <DlItems desc="EMPRESA" links={links1} descLinks={descLinks1} />
-          <DlItems desc="COMUNIDADES" links={links2} descLinks={descLinks2} />
-          <DlItems desc="LINKS ÚTEIS" links={links3} descLinks={descLinks3} />
-        </DivFooterDlItems>
-        <FollowUsItems />
-      </ContainerFooter>
+      <DivCenterFooter>
+        <ContainerFooter>
+          <DivSpotifyIcon>
+            <ASpanIcon href="https://www.spotify.com/br/">
+              <Span>
+                <ImgIcon src="../../../../whiteicon.svg" alt="logo" />
+                Spotify
+              </Span>
+            </ASpanIcon>
+          </DivSpotifyIcon>
+          <DivFooterDlItems>
+            <DlItems desc="EMPRESA" links={links1} descLinks={descLinks1} />
+            <DlItems desc="COMUNIDADES" links={links2} descLinks={descLinks2} />
+            <DlItems desc="LINKS ÚTEIS" links={links3} descLinks={descLinks3} />
+          </DivFooterDlItems>
+          <FollowUsItems />
+        </ContainerFooter>
+        <ContainerInfo>
+          <ContainerInfoFirst>
+            <ARegion>
+              <ImgIconRegion src="../../../../region.svg" alt="logo" />
+              Brasil
+            </ARegion>
+          </ContainerInfoFirst>
+          <ContainerInfoLast>
+            <div>
+              <AInfo href="https://www.spotify.com/br/legal/">Legal</AInfo>
+              <AInfo href="https://www.spotify.com/br/privacy/">
+                Centro de privacidade
+              </AInfo>
+              <AInfo href="https://www.spotify.com/br/privacy-policy/">
+                Política de privacidade
+              </AInfo>
+              <AInfo href="https://www.spotify.com/br/cookies-policy/">
+                Cookies
+              </AInfo>
+              <AInfo href="https://www.spotify.com/br/privacy-policy/#s3">
+                Sobre anúncios
+              </AInfo>
+            </div>
+            <div>
+              <SpanYear>© 2021 Spotify AB</SpanYear>
+            </div>
+          </ContainerInfoLast>
+        </ContainerInfo>
+      </DivCenterFooter>
     </DivContainerFooter>
   );
 }
